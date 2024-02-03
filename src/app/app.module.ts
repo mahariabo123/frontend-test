@@ -7,11 +7,13 @@ import { UpdateComponent } from './update/update.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { TesthtmlComponent } from './testhtml/testhtml.component';
 
 const routes: Routes = [
   { path: 'create', component: CreateComponent },
   { path: '', component: ReadComponent },
-  { path: 'update/:id', component: UpdateComponent } // Redirection pour les URL non définies
+  { path: 'update/:id', component: UpdateComponent },
+  { path: 'test', component: TesthtmlComponent } // Redirection pour les URL non définies
 ];
 
 @NgModule({
@@ -19,7 +21,8 @@ const routes: Routes = [
     AppComponent,
     CreateComponent,
     ReadComponent,
-    UpdateComponent
+    UpdateComponent,
+    TesthtmlComponent
   ],
   imports: [
     BrowserModule,
