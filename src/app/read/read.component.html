@@ -1,0 +1,7 @@
+<h2>Liste des véhicules</h2>
+<div *ngFor="let vehicule of vehicules">
+    <p>{{ vehicule.marque }} - {{ vehicule.modele }} - {{ vehicule.annee }}</p>
+    <button (click)="deleteVehicule(vehicule._id)">Supprimer</button>
+    <button (click)="updateVehicule(vehicule._id)">Mettre à jour</button>
+  </div>
+  
