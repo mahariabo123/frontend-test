@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 })
 
 export class CrudVehicule {
-  private apiUrl = 'http://localhost:3000/api/vehicules';
+  private apiUrl = 'https://node-back-test-10sn20es6-valisoa411.vercel.app/api/vehicules';
 
   constructor(private http: HttpClient) {}
 
